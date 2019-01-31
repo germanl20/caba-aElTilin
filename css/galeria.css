@@ -1,0 +1,69 @@
+.gallery__img{
+    object-fit: cover;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.gallery__img:hover{
+    transform: scale(1.06);
+}
+.gallery__img--big{
+    height: 400px;
+}
+.gallery__img--small{
+    height: 200px;
+}
+.gallery .column:nth-child(1) img:nth-child(2){
+    object-position: bottom;
+}
+.modal{
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50000;
+    display: none;
+}
+.modal--open{
+    display: block;
+}
+.modal__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.modal__img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+.modal__boton{
+    position: absolute;
+    top: 10px; /*LE DIGO QUE ESTE ARRIBA Y A LA DERECHA 10 PIXELES*/
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 2.3em;
+    font-family: monospace;
+}
+
+@media screen and (min-width:768px){
+    .modal__img{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .modal__img{
+        height: 85%;
+        width: 75%;
+        object-fit: contain;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reservas | Cabaña el Tilin</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/reservas.css">
+    <link rel="stylesheet" href="css/font.css">
+</head>
+
+<body>
+    <header class="main-header container container--flex">
+        <div class=" column--50">
+            <div class="logo-container column">
+                <h1 class="logo">Cabaña El Tilin</h1>
+            </div>
+        </div>
+        <div class="main-header__contactInfo column column--50">
+            <p class="main-header__contactInfo__phone">
+                <span class="icon-telefono">1154862635</span>
+            </p>
+            <p class="main-header__contactInfo__address">
+                <span class="icon-ubicacion">Tobas y el Pericon</span>
+            </p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <span class="icon-menu" id="btnmenu"></span>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="index.html" class="menu__link">Nosotros</a></li>
+                <li class="menu__item"><a href="laCabania.html" class="menu__link">La Cabaña</a></li>
+                <li class="menu__item"><a href="ubicacion.html" class="menu__link">Ubicación</a></li>
+                <li class="menu__item"><a href="reservas.html" class="menu__link menu__link--select">Reservas</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span class="icon-mail"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="banner">
+        <img src="img/cabaña1.jpg" alt="Punta Indio" class="banner__img">
+        <div class="banner__content">Reservá tu lugar</div>
+    </section>
+
+    <main class="main">
+        <section class="group contact">
+            <h2 class="group__title">Contáctenos</h2>
+            <div class="container container--flex">
+                <div class="contact-information column--50">
+                    <h2 class="column__title">Información de contacto</h2>
+                    <p class="column__txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam sequi odit eaque quod? Sint, commodi.</p>
+                    <p class="column__txt"><span class="icon-telefono"></span>Telefóno: 1154862635</p>
+                    <p class="column__txt"><span class="icon-ubicacion"></span>Tobas y el pericon</p>
+                    <p class="column__txt"><span class="icon-mail"></span>miriamgt46@hotmail.com</p>
+                </div>
+                <form action="enviar-datos.php" method="POST" class="formulario column column--50">
+                    <label for="" class="formulario__label">Nombre:</label>
+                    <input type="text" class="formulario__input-txt" name="nombre">
+                    <label for="" class="formulario__label">Correo:</label>
+                    <input type="text" class="formulario__input-txt" name="correo">
+                    <label for="" class="formulario__label">Teléfono:</label>
+                    <input type="text" class="formulario__input-txt" name="telefono">
+                    <label for="" class="formulario__label">Mensaje:</label>
+                    <textarea name="mensaje" id="" cols="30" rows="10" class="formulario__textarea"></textarea>
+                    <input type="submit" class="btn formulario__btn" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+            <div class="container container--flex">
+                <div class="column column--33 footer">
+                    <h2 class="column__title">¿Por qué ir a mi cabaña?</h2>
+                    <p class="column__txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit eaque ipsa aliquam vitae eius voluptatibus blanditiis quaerat rem accusantium, cum nam dolore dolorem deleniti voluptate, alias reprehenderit. Minima, quis nulla?</p>
+                </div>
+                <div class="column column--33 footer">
+                    <h2 class="column__title">Contáctanos</h2>
+                    <p class="column__txt"><span class="icon-ubicacion">Tobas y el pericon</span></p>
+                    <p class="column__txt"><span class="icon-telefono">1154862635</span></p>
+                    <p class="column__txt"><span class="icon-mail">miriamgt46@hotmail.com</span></p>
+                </div>
+                <div class="column column--33 footer">
+                    <h2 class="column__title">Síguenos y contáctanos en nuestras redes</h2>
+                    <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p>
+                    <p class="column__txt"><a href="" class="icon-mercadolibre">Mercado libre</a></p>
+                </div>
+                <p class="copy">© 2019 Punta Indio | Todos los derechos reservados</p>
+            </div>
+        </footer>
+        <script src="js/menu.js"></script>
+</body>
+
+</html>
