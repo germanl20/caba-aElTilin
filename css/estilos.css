@@ -265,6 +265,18 @@ h1, h2, h3, h4, h5, h6{
     color: #de423a;
 }
 
+.txt__resaltado{
+    color: #de423a;
+}
+
+.group__precio{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.8em;
+    color: #de423a;
+    margin: 0;
+}
+
 /*------------------------ ESTILOS FOOTER -------------------------------*/
 .main-footer{
     background: #222;
@@ -273,6 +285,18 @@ h1, h2, h3, h4, h5, h6{
     font-size: .8em;
     text-align: center;
     margin-top: 20px;
+}
+
+.main-footer .column:nth-child(3) .column__txt{
+    background: rgb(65, 65, 65);
+    padding: 8px;
+    margin-right: 3px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.main-footer .column:nth-child(3) .column__txt:hover{
+    background: rgb(83, 83, 83);
 }
 
 .copy{
