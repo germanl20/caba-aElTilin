@@ -1,0 +1,38 @@
+.main__about__description{
+    margin: 0;
+}
+
+.main-footer{
+    margin-top: 0;
+}
+
+.main__about__description .column__txt{
+    text-align: justify;
+    font-size: .9em;
+    margin-top: 15px;
+}
+
+.main__about__description img{
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.column__title{
+    margin: 20px;
+}
+
+@media screen and (min-width: 768px){
+    .main__about__description{
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .main__about__description img{
+        height: 370px;
+        width: 370px;
+    }
+}

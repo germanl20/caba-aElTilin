@@ -16,10 +16,16 @@
     margin-right: 7px;
     position: relative; /*PARA PODER BAJAR EL ICONO UN POCO CON TOP*/
     top: 5px;
+    color: #323648;
 }
 .formulario{
     padding: 10px;
     padding-top: 0;
+}
+.formulario__label{
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #323648;
 }
 .formulario__label, .formulario__input-txt, .formulario__textarea{
     display: block;
@@ -46,6 +52,25 @@
     margin: auto;
     margin-top: 10px;
     cursor: pointer;
+    border-radius: 5px;
+}
+.formulario__input-txt, .formulario__textarea{
+    border: none;
+    background: #e9e9e9;
+    border-radius: 10px;
+    box-shadow: 3px 3px 11px -4px rgba(158,158,158,0.83);
+}
+.formulario__input-txt:focus, .formulario__textarea:focus{
+    border-color: #de423a;
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255, 144, 0, 0.6);
+    outline: 0 none;
+}
+.formulario__input-txt::placeholder, .formulario__textarea::placeholder{
+    font-weight: bold;
+    color: #9e9e9e;
+}
+.contact .column__title{
+    color: #323648;
 }
 
 @media screen and (min-width:480px){
